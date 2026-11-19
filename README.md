@@ -1,6 +1,14 @@
 # project-blueprint
 
+![project-blueprint banner](docs/assets/banner.png)
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Claude Skills](https://img.shields.io/badge/claude%20skills-9-7c5cff)](skill/)
+[![Docs](https://img.shields.io/badge/docs-9%20steps-informational)](docs/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 **Build interview-ready projects.**
+
 
 Most "how to build a good portfolio project" advice is generic opinion. This repo isn't that. It's the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - written down so anyone can follow it, with real worked examples, fillable templates, and nine importable Claude skills covering every step.
 
