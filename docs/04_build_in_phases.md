@@ -17,3 +17,11 @@ A project built end to end before anything is tested tends to hide its real bugs
 This doesn't mean every project needs six named phases. A small, well-scoped project might have three real phases. What matters is that whatever phases exist are independently verifiable, not that there's a specific number of them.
 
 Next: [05 - Adversarial testing](05_adversarial_testing.md).
+
+## Step by step, in practice
+
+1. Draft the phase list before writing code: typically decisions/risks -> happy path -> the hard mechanism -> adversarial proof -> deployment -> docs, but cut or merge phases that don't fit your project's real shape.
+2. For each phase, write one sentence describing what "verified" means for it specifically - not "it works," something checkable (e.g. "all three chaos scenarios run against real containers with captured output").
+3. Don't start the next phase until the current one's verification sentence is actually true, not just probably true.
+4. If a phase reveals that an earlier design decision (step 03) was wrong, update that decision file explicitly rather than silently working around it in code.
+5. Keep a running note of anything surprising that happened during a phase, even if it's not a full bug yet - today's "huh, that's odd" is often tomorrow's entry in step 06.

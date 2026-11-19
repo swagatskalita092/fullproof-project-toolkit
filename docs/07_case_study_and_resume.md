@@ -23,3 +23,12 @@ A resume bullet drawn from this kind of project should name the mechanism and th
 ## A worked example
 
 [`examples/stack_overflow_pipeline_bug.md`](../examples/stack_overflow_pipeline_bug.md) shows a real significant bug (a field silently null for every row since the start of a data pipeline project) written up with root cause, discovery, fix, and the real before/after numbers - the kind of writeup this step is asking for.
+
+## Step by step, in practice
+
+1. Draft the case study using [`templates/case_study_template.md`](../templates/case_study_template.md) while the project is still fresh - don't wait weeks and rely on memory for "how did you measure that."
+2. For every number in the draft, write down next to it (in a scratch file, not the final doc) exactly how it was produced - the command, the tool, the sample size. If you can't, go re-measure it or cut the number.
+3. Write at least one real bug honestly: root cause, how it was found, the fix, the regression test. If verification (step 06) genuinely found nothing, say that explicitly rather than inventing a bug for the sake of having one.
+4. Draft resume bullets from the case study, not from the tech stack list - each bullet should survive "how do you know that's true" in an interview.
+5. Get the bullets reviewed by someone else (or sit on them for a day) before they go on an actual resume - a bullet shouldn't go live the moment it's drafted.
+6. Re-read the "what's still open" section out loud before publishing - if it's empty, that's usually a sign something wasn't looked at closely enough, not that the project is flawless.

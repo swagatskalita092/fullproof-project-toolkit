@@ -16,3 +16,12 @@ Never trust a single report, including your own. The goal is independent evidenc
 It's tempting to treat "it builds, the tests are green" as the finish line. In practice, every real bug recorded in this repo's examples was found during a verification pass like this one - not during the original build. Verification isn't a formality after the real work is done; for a project whose whole point is correctness or reliability, it *is* the real work.
 
 Next: [07 - Case study and resume](07_case_study_and_resume.md).
+
+## Step by step, in practice
+
+1. Before calling any phase "done," physically do a fresh clone (or ask someone else to) rather than trusting the directory you've been editing.
+2. Run the actual test suite against real infrastructure from that fresh clone - not a mock, not "should pass."
+3. If CI exists, check its status through the API or a hard-refreshed page, not a page you loaded a while ago.
+4. For anything a collaborator or tool reported as done, diff the real committed file against what was actually asked for, at least once per project, not just the first time.
+5. After any push, compare local HEAD against the remote branch directly rather than trusting the push command's own output.
+6. For each test that's supposed to prove an invariant, read the assertion itself and confirm it actually checks that invariant - not just that the endpoint returned 200.

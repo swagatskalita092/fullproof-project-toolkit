@@ -21,3 +21,11 @@ An architecture designed without naming the risks first tends to bolt security/c
 See [`examples/document_exchange_phase0.md`](../examples/document_exchange_phase0.md) for a full real instance: four invariants named first (tenant isolation, instant revocation, an untamperable audit log, no bypass of the access check), the credible failure mode for each one, and only then an entity model built specifically to hold those invariants.
 
 Next: [03 - Design decisions](03_design_decisions.md).
+
+## Step by step, in practice
+
+1. Finish this sentence at least twice: "This project has failed if ______ becomes possible." Each completion is a candidate invariant.
+2. For each invariant, write the most boring, realistic way it breaks - not a movie-villain scenario. Boring and realistic is usually the actual bug.
+3. Rank the invariants by how bad it would be if they broke. You don't need adversarial tests for all of them equally - the worst ones get tested first and most thoroughly.
+4. Only after this list exists, start sketching the entity model / architecture - and check each entity and relationship against the list: does this design make any invariant easier or harder to hold?
+5. If you can't map an architectural choice back to an invariant or a real requirement, ask why it's there before building it.

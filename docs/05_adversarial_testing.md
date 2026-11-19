@@ -19,3 +19,12 @@ Not "I expect this would work because the code looks right." Actually run the sc
 [`examples/flashbuy_chaos_testing.md`](../examples/flashbuy_chaos_testing.md) walks through five real adversarial scenarios run against a real Docker Compose stack for a message-queue-based event delivery feature - including two real bugs that were found only by actually running the scenarios, not by reading the code.
 
 Next: [06 - Verification checklist](06_verification_checklist.md).
+
+## Step by step, in practice
+
+1. Pull your ranked invariant list from step 02.
+2. For each of the top 3-6, write a scenario as a single sentence: what you'll actually do to it, and what should happen if the system holds.
+3. Before running anything, write your predicted result - this is what makes a surprising actual result meaningful instead of unremarked.
+4. Run it for real against real infrastructure (a real container, a real process you actually kill), and capture the literal output - logs, database state, HTTP responses - not a paraphrase.
+5. If the actual result differs from the prediction, that's usually either a real bug (fix it, write it up per step 06) or a wrong assumption about the system (update step 02/03 to reflect what you now know).
+6. Write the scenario, prediction, and real captured result together in your project's own docs - this pairing is what makes the test suite readable as deliberate proof rather than a log dump.

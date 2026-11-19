@@ -26,3 +26,11 @@ Use [`templates/design_decisions_template.md`](../templates/design_decisions_tem
 [`examples/document_exchange_phase0.md`](../examples/document_exchange_phase0.md) has five real decisions recorded this way, each with its rejected alternative and revisit trigger, for a secure document-sharing project that was scoped (but not built) using this exact process.
 
 Next: [04 - Build in phases](04_build_in_phases.md).
+
+## Step by step, in practice
+
+1. List every point where you genuinely had more than one reasonable option (storage choice, sync vs async delivery, caching or not, how to handle a race).
+2. For each one, write the chosen option, the rejected option, and the one-sentence reason - not a pros/cons essay, one sentence that would survive being asked "why" in an interview.
+3. Write the revisit trigger as a measurable condition, not a feeling - "if p99 exceeds X under Y load" not "if it feels slow."
+4. Mark each decision's confidence: solid (would need real new evidence to change), or provisional (would benefit from a quick experiment before committing further). Don't let provisional decisions quietly harden into solid ones without that experiment happening.
+5. Revisit this file explicitly at the end of every phase in step 04 - a decision that's been outgrown should be updated here, not just left stale while the code moves on.

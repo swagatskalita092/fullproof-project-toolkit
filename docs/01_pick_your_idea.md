@@ -26,3 +26,15 @@ Two models (or two people) can share the same blind spot and confidently repeat 
 See [`examples/document_exchange_phase0.md`](../examples/document_exchange_phase0.md) - a real case where an initial idea (a self-hosted LLM-serving gateway) was rejected specifically because the honest answer to "what does this prove" was "not much beyond what everyone else's version proves," and a second idea was scoped from scratch using a grounded second-opinion prompt.
 
 Next: [02 - Name your risks](02_name_your_risks.md).
+
+## Step by step, in practice
+
+1. Write one sentence: what would this project do, and who's it for (even if the "who" is just you)?
+2. Write one sentence: what's the shallow, 30-minute version of this idea that a hundred other people would also build?
+3. Write one sentence: what does your version prove that the shallow version doesn't? If you can't answer this honestly, go back to step 2 with a narrower or different idea.
+4. List 2-3 project ideas you're actually considering, each with its own answer to step 3. Compare them side by side rather than falling in love with the first one.
+5. Write your own criteria for "this is worth building" before asking anyone else's opinion.
+6. If using a second opinion (AI or human): ask for objections and the strongest reason to reject the idea, not "is this good."
+7. Write down what changed your mind, or that nothing did, and why.
+
+See [`docs/08_idea_bank.md`](08_idea_bank.md) if you don't have an idea at all yet.
