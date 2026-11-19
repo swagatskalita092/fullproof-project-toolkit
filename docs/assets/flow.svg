@@ -1,0 +1,46 @@
+<svg width="900" height="130" viewBox="0 0 900 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="risk to test to evidence flow">
+  <defs>
+    <linearGradient id="flowbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1e42"/>
+      <stop offset="100%" stop-color="#0d2550"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'JetBrains Mono','Fira Code','Courier New',monospace; }
+    .bg { fill: url(#flowbg); }
+    .border { stroke: rgba(160,200,255,0.25); stroke-width: 1; fill: none; }
+    .flowline { stroke: rgba(160,200,255,0.4); stroke-width: 2; }
+    .node { fill: #0a1e42; stroke: #7fb0ff; stroke-width: 2; }
+    .nodelabel { fill: #e8f1ff; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+    .sublabel { fill: rgba(195,216,255,0.6); font-size: 10.5px; letter-spacing: 0.5px; }
+    .pulse { animation: pulse 4s ease-in-out infinite; }
+    .n1 { animation-delay: 0s; }
+    .n2 { animation-delay: 1.3s; }
+    .n3 { animation-delay: 2.6s; }
+    @keyframes pulse {
+      0%   { fill: #0a1e42; }
+      10%  { fill: #7fb0ff; }
+      35%  { fill: #7fb0ff; }
+      55%  { fill: #0a1e42; }
+      100% { fill: #0a1e42; }
+    }
+  </style>
+
+  <rect class="bg" width="900" height="130" rx="6"/>
+  <rect class="border" x="0.5" y="0.5" width="899" height="129" rx="6"/>
+
+  <line class="flowline" x1="160" y1="55" x2="400" y2="55"/>
+  <line class="flowline" x1="500" y1="55" x2="740" y2="55"/>
+
+  <circle class="node pulse n1" cx="130" cy="55" r="11"/>
+  <circle class="node pulse n2" cx="450" cy="55" r="11"/>
+  <circle class="node pulse n3" cx="770" cy="55" r="11"/>
+
+  <text class="nodelabel" x="130" y="92" text-anchor="middle">RISK</text>
+  <text class="nodelabel" x="450" y="92" text-anchor="middle">TEST</text>
+  <text class="nodelabel" x="770" y="92" text-anchor="middle">EVIDENCE</text>
+
+  <text class="sublabel" x="130" y="108" text-anchor="middle">name the invariant</text>
+  <text class="sublabel" x="450" y="108" text-anchor="middle">deliberately break it</text>
+  <text class="sublabel" x="770" y="108" text-anchor="middle">captured, not claimed</text>
+</svg>
