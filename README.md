@@ -1,6 +1,6 @@
 # project-blueprint
 
-![project-blueprint banner](docs/assets/banner.png)
+![project-blueprint](docs/assets/hero.svg)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Claude Skills](https://img.shields.io/badge/claude%20skills-9-7c5cff)](skill/)
@@ -20,6 +20,8 @@ The point of a portfolio project isn't that it works. It's that every claim abou
 - **Have an idea already?** Start at [`docs/01_pick_your_idea.md`](docs/01_pick_your_idea.md) - check it's not a shallow version of something common before investing time in it.
 - **Have a project already, and want to know what's missing?** Jump to [`docs/05_adversarial_testing.md`](docs/05_adversarial_testing.md) and [`docs/06_verification_checklist.md`](docs/06_verification_checklist.md) first - these are usually the actual gap between "it works" and "it's interview-ready." Then [`docs/07_case_study_and_resume.md`](docs/07_case_study_and_resume.md) to write it up.
 - **Writing a research paper instead of a project?** [`docs/09_research_paper.md`](docs/09_research_paper.md) applies the same honesty discipline to academic writing.
+
+![](docs/assets/divider.svg)
 
 ## The pipeline
 
