@@ -15,4 +15,7 @@
 - **The fix:**
 - **The regression test:**
 
+## What I'd do differently now
+(Hindsight, not a known limitation - what you'd change given what you know now, and why.)
+
 ## What's still open or explicitly out of scope

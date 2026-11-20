@@ -7,7 +7,7 @@ description: Use when turning a finished project into a case study, portfolio wr
 
 A finished project and an interview-ready project are different things. This closes the gap.
 
-**A case study should cover:** the problem and who it's for, the risk that actually mattered, the key design decision and its tradeoff, the proof that it holds (real adversarial test results), at least one real bug found during verification and how it was caught, and what's still open or explicitly out of scope.
+**A case study should cover:** the problem and who it's for, the risk that actually mattered, the key design decision and its tradeoff, the proof that it holds (real adversarial test results), at least one real bug found during verification and how it was caught, and what's still open or explicitly out of scope. Add a short "what I'd do differently now" reflection too - distinct from "what's still open": the former is hindsight judgment, the latter a known gap, and the former specifically reads as more senior even in a single short paragraph.
 
 **Resume bullets should name the mechanism and the proof, not just a tech list.** "Built X, proven by deliberately breaking Y and confirming Z" beats "built X using (tech, tech, tech)." Draft new bullets as candidates and get them reviewed before they land on an actual resume - a bullet shouldn't go live silently.
 

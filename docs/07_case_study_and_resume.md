@@ -16,6 +16,8 @@ Every metric that appears in a README, a resume bullet, or project notes must tr
 
 A case study should cover, specifically: the problem and who it's for, the risk that actually mattered (from step 02), the key design decision and its tradeoff (from step 03), the proof that it holds (from step 05), at least one real bug found during verification and how it was caught, and what's still open or out of scope. Use [`templates/case_study_template.md`](../templates/case_study_template.md) as a starting structure.
 
+**One more section worth adding, distinct from "what's still open":** a short hindsight reflection on what you'd do differently now. "What's still open" is about known gaps; this is about judgment that only shows up in hindsight - and reviewer-side accounts of reading junior portfolios specifically call out this kind of reflection as reading more senior, even in one short section.
+
 ## Translate into resume bullets, carefully
 
 A resume bullet drawn from this kind of project should name the mechanism and the proof, not just a tech list: *"built X, proven by deliberately breaking Y and confirming Z"* beats *"built X using (tech, tech, tech)."* Draft new bullets as candidates and get them reviewed before they land on an actual resume - a bullet shouldn't go live silently. If a number in a drafted bullet can't be traced to a real captured run, don't draft it - figure out what's missing to make it defensible instead.
