@@ -3,13 +3,13 @@
 ![project-blueprint](docs/assets/hero.svg)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Claude Skills](https://img.shields.io/badge/claude%20skills-9-7c5cff)](skill/)
+[![Claude Skills](https://img.shields.io/badge/claude%20skills-12-7c5cff)](skill/)
 [![Docs](https://img.shields.io/badge/docs-9%20steps-informational)](docs/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 **Build interview-ready projects.**
 
-Most "how to build a good portfolio project" advice is generic opinion. This repo isn't that. It's the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - written down so anyone can follow it, with real worked examples, fillable templates, and nine importable Claude skills covering every step.
+Most "how to build a good portfolio project" advice is generic opinion. This repo isn't that. It's the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - written down so anyone can follow it, with real worked examples, fillable templates, and twelve importable Claude skills - nine for the pipeline steps themselves, plus one to route you to the right one and two more for auditing a project and keeping this repo's own methodology consistent.
 
 The point of a portfolio project isn't that it works. It's that every claim about it is something that was actually proven, not asserted. That's the bar this repo is trying to get you to.
 
@@ -116,6 +116,12 @@ Nine steps, each with a doc (the full explanation plus a "step by step, in pract
 
 **Want the whole pipeline as one skill instead of nine separate imports?** Use [`skill/portfolio-project-rigor`](skill/portfolio-project-rigor/SKILL.md).
 
+**Three more skills, for before and after the pipeline itself:**
+
+- [`skill/start-here`](skill/start-here/SKILL.md) - not sure which step you need? This routes you to the right doc/skill from one sentence about where you're stuck.
+- [`skill/project-self-audit`](skill/project-self-audit/SKILL.md) - already have a project? This checks it against all nine steps looking for real evidence, not a rubber stamp.
+- [`skill/methodology-consistency-check`](skill/methodology-consistency-check/SKILL.md) - for maintaining this repo itself: checks that the docs and skills don't quietly contradict each other.
+
 ![](docs/assets/divider.svg)
 
 ## See it in action
@@ -133,7 +139,7 @@ Three real excerpts in [`examples/`](examples/), annotated - not invented for th
 - `docs/` - the methodology itself, one numbered file per step, each ending in a concrete "step by step, in practice" checklist.
 - `templates/` - blank, fillable versions of the working documents each step produces (risks, design decisions, adversarial tests, case study).
 - `examples/` - real excerpts from two actual projects, annotated to show the methodology in practice.
-- `skill/` - nine importable Claude skills: one umbrella skill covering the whole pipeline, and eight focused skills for whoever just wants one piece of it.
+- `skill/` - twelve importable Claude skills: one umbrella skill covering the whole pipeline, eight focused skills for one step at a time, and three more for routing, self-audit, and keeping the repo's own methodology consistent.
 
 ## How to use the skills
 

@@ -71,4 +71,4 @@ If asked "is this good enough" or "is there nothing left to add," resist the pul
 
 ## 11. Translate finished work into resume/interview material without breaking the honesty rules
 
-State what's demonstrated, what remains uncertain, and what would change under different requirements. A resume bullet should name the mechanism and the proof: "built X, proven by deliberately breaking Y and confirming Z" beats a tech list. Draft new bullets as candidates needing sign-off, never land one silently. If a number can't be traced to a real captured run, don't draft it.
+State what's demonstrated, what remains uncertain, and what would change under different requirements. A resume bullet should name the mechanism and the proof: "built X, proven by deliberately breaking Y and confirming Z" beats a tech list. Draft new bullets as candidates needing sign-off, never land one silently. If a number can't be traced to a real captured run, don't draft it. Add a short "what I'd do differently now" reflection to the write-up too - hindsight judgment, distinct from a known limitation, and specifically the kind of thing that reads as more senior even in one short paragraph.
