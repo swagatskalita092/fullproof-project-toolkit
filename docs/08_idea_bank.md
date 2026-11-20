@@ -28,6 +28,14 @@ Use this as a starting point, not a menu to copy verbatim - the moment you narro
 - **An evaluation/regression-testing harness for LLM outputs** (not another chatbot - tooling that catches when a prompt or model change silently makes outputs worse). Invariant: a quality regression gets caught before it ships, not after a user complains.
 - **A cost/latency observability layer for an AI feature already in production.** Invariant: every dollar and every millisecond is attributed to a real, traceable request, not estimated.
 
+## Developer tooling / technical deep-dives
+A category worth calling out on its own: reviewer-side accounts of what actually gets a repo pinned in 2026 consistently point at technical depth that's hard to fake with a thin AI-generated wrapper - a compiler, a database, a protocol implementation - over another CRUD app or chatbot demo. The depth has to be real, though; a toy version with no adversarial proof is just a smaller version of the same problem.
+
+- **A toy compiler or interpreter for a real, if small, language subset.** Invariant: every program in a defined valid-input corpus produces the documented correct output, and every program in an invalid corpus is rejected with a clear error - not just "parses the happy path." Differentiator: build an adversarial corpus of edge cases (operator precedence, recursive definitions, malformed input) and prove the implementation holds against all of it, not a demo script.
+- **A minimal storage engine** (an LSM-tree or B-tree backed key-value store). Invariant: a crash mid-write never corrupts or loses a previously committed record. Differentiator: prove durability by killing the process mid-write under a fuzzed workload and confirming the write-ahead log replays to a consistent state - not an assumption that `fsync` makes it safe.
+- **A protocol implementation that actually interoperates** (a simplified real protocol, or a custom RPC layer tested against a reference client). Invariant: out-of-order, duplicated, or dropped packets never violate the protocol's stated delivery/ordering guarantee. Differentiator: prove it against a real packet-loss/reorder simulation (e.g. `tc netem`), not a clean-localhost demo.
+- **A build or dev tool with a correctness property, not just convenience.** Invariant: the same input always produces the same output (a reproducible build or cache), or a cached value is never served after its invalidating input changed. Differentiator: prove reproducibility or invalidation across repeated runs and environments, not "works on my machine."
+
 ## How to actually use this list
 
 Pick one, then immediately go write its invariants properly using [02 - Name your risks](02_name_your_risks.md) - the one-line invariant above is a starting point, not the finished analysis. If none of these fit, use the same thinking pattern on your own idea: state it as "what must never happen," not "what features it has."
