@@ -15,6 +15,10 @@ This repo's own credibility depends on it following its own rules: no claim with
 4. **New content doesn't quietly weaken an existing rule.** Check additions against the core non-negotiables: no fabricated/rounded numbers, no claim without traceable evidence, provisional decisions stay provisional, document bugs honestly. A new section that drifts toward "this is fine to estimate" or "this can be asserted without a test" is a regression even if it reads smoothly.
 5. **The umbrella skill (`portfolio-project-rigor`) and the split skills stay in sync.** If a split skill gains real new guidance (like a new corroborated addition), check whether the umbrella skill's matching section should get the same addition - they're meant to be the same content at two grain sizes, not two independently-evolving versions.
 
+## A runnable companion exists
+
+`scripts/check_repo.py` makes the link-resolution and terminology-drift checks above actually runnable, not just a procedure to eyeball - `python3 scripts/check_repo.py .` from the repo root, and `.github/workflows/check.yml` runs it on every push/PR. Run it first; use the prose checks above (skill contradictions, umbrella/split sync) for what a script can't catch.
+
 ## How to report it
 
 List what was actually checked (which files, which terms, which skill pairs) and what was found - a broken link with its exact path and where it's referenced, a specific terminology drift with both locations quoted, or "checked N links and M skill/doc pairs, found nothing" if genuinely clean. Don't report "looks consistent" without naming what was actually compared - that's the same rubber-stamp failure mode this whole repo is built to avoid, just pointed at the repo's own content instead of someone else's project.
