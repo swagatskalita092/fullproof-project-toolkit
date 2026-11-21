@@ -6,6 +6,7 @@
 [![Claude Skills](https://img.shields.io/badge/claude%20skills-12-7c5cff)](skill/)
 [![Docs](https://img.shields.io/badge/docs-9%20steps-informational)](docs/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24427993.svg)](https://doi.org/10.5281/zenodo.24427993)
 
 **Build interview-ready projects.**
 
