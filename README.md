@@ -126,7 +126,9 @@ Nine steps, each with a doc (the full explanation plus a "step by step, in pract
 
 ## See it in action
 
-Three real excerpts in [`examples/`](examples/), annotated - not invented for this repo:
+Three real excerpts in [`examples/`](examples/), annotated - not invented for this repo, plus one that walks the whole pipeline on a single project rather than one step at a time:
+
+- **[One project, start to finish: idea through resume](examples/flashbuy_full_walkthrough.md)** - all nine steps applied to one real flash-sale checkout backend, so you can see how a named risk becomes an adversarial test, and a provisional decision gets revisited once that test actually runs.
 
 - **[Picking an idea, then naming risks before any code](examples/document_exchange_phase0.md)** - a real planning pass for a project that, in the end, wasn't built. An LLM-serving-gateway idea got rejected for a named reason (too common a 2026 portfolio shape to prove anything, regardless of polish), and the Phase 0 risk analysis for its replacement is shown in full.
 - **[Adversarial testing against real infrastructure](examples/flashbuy_chaos_testing.md)** - a flash-sale checkout backend needed to guarantee a duplicate message delivery never creates a duplicate downstream job. Five scenarios, run against real Docker containers, not simulated.
