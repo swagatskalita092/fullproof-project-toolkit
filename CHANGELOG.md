@@ -2,6 +2,17 @@
 
 All notable changes to this repo. Dates are when the change was committed.
 
+## [Unreleased]
+
+### Added
+- A seventh idea-bank domain, *observability / monitoring tooling*, grounded in a real engineering-blog account of production-grade observability being "typical for a production service, but rarely seen in a side project."
+- A second full end-to-end worked example (`examples/stack_overflow_pipeline_full_walkthrough.md`), applying the seven-step pipeline to a data-correctness project instead of a concurrency one, so the methodology is shown working on two genuinely different kinds of invariant.
+- A thirteenth Claude skill, `defend-your-project`: rehearsing a finished project's live interview defense (why-not-X, what-breaks-at-scale, naming the real weakness) using the project's own design-decision/adversarial-test/case-study material as the answers, rather than a fresh script.
+- A worked-example link added to `docs/04_build_in_phases.md`, which previously had none.
+
+### Research notes
+- Candidate sources for a "defending a project live under interviewer pushback" claim (freeCodeCamp, DesignGurus, a RealPython lesson) were checked and found too thin or off-target to ground a factual claim on their own; the new `defend-your-project` skill is instead grounded in a verifiable existing interview-question format (a real technical-screen prompt asking candidates to defend a project's design live) plus internal reasoning tying it to this repo's own steps 03/05/07, rather than an overstated research citation.
+
 ## [1.0.0] - 2026-11-21
 
 Initial stable release. Everything below shipped in the run-up to this tag.

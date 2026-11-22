@@ -3,14 +3,14 @@
 ![Fullproof Project Toolkit](docs/assets/hero.svg)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Claude Skills](https://img.shields.io/badge/claude%20skills-12-7c5cff)](skill/)
+[![Claude Skills](https://img.shields.io/badge/claude%20skills-13-7c5cff)](skill/)
 [![Docs](https://img.shields.io/badge/docs-9%20steps-informational)](docs/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24427993.svg)](https://doi.org/10.5281/zenodo.24427993)
 
 **Build interview-ready projects.**
 
-Most "how to build a good portfolio project" advice is generic opinion. This repo isn't that. It's the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - written down so anyone can follow it, with real worked examples, fillable templates, and twelve importable Claude skills - nine for the pipeline steps themselves, plus one to route you to the right one and two more for auditing a project and keeping this repo's own methodology consistent.
+Most "how to build a good portfolio project" advice is generic opinion. This repo isn't that. It's the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - written down so anyone can follow it, with real worked examples, fillable templates, and thirteen importable Claude skills - nine for the pipeline steps themselves, one for rehearsing the live interview version of the same material, plus one to route you to the right one and two more for auditing a project and keeping this repo's own methodology consistent.
 
 The point of a portfolio project isn't that it works. It's that every claim about it is something that was actually proven, not asserted. That's the bar this repo is trying to get you to.
 
@@ -95,6 +95,8 @@ Nine steps, each with a doc (the full explanation plus a "step by step, in pract
 <br>Every real bug found during verification gets written up: root cause, the fix, a regression test - never softened or hidden. A project that admits its gaps reads as more trustworthy than one that claims perfection, and "here's a real bug I found and how" is a stronger interview answer than a project with supposedly none.
 
 [`docs/07_case_study_and_resume.md`](docs/07_case_study_and_resume.md) · [`skill/case-study-and-resume`](skill/case-study-and-resume/SKILL.md)
+
+<br>**Also:** [`skill/defend-your-project`](skill/defend-your-project/SKILL.md) - the same material, rehearsed for the live interview version of this conversation, not just the written one.
 </details>
 
 <details>
@@ -117,8 +119,9 @@ Nine steps, each with a doc (the full explanation plus a "step by step, in pract
 
 **Want the whole pipeline as one skill instead of nine separate imports?** Use [`skill/portfolio-project-rigor`](skill/portfolio-project-rigor/SKILL.md).
 
-**Three more skills, for before and after the pipeline itself:**
+**Four more skills, for before and after the pipeline itself:**
 
+- [`skill/defend-your-project`](skill/defend-your-project/SKILL.md) - have a finished project and an interview coming up? This rehearses the live "why not X / what breaks / what's the weakest part" questions, using your own step 03/05/07 material as the answers.
 - [`skill/start-here`](skill/start-here/SKILL.md) - not sure which step you need? This routes you to the right doc/skill from one sentence about where you're stuck.
 - [`skill/project-self-audit`](skill/project-self-audit/SKILL.md) - already have a project? This checks it against all nine steps looking for real evidence, not a rubber stamp.
 - [`skill/methodology-consistency-check`](skill/methodology-consistency-check/SKILL.md) - for maintaining this repo itself: checks that the docs and skills don't quietly contradict each other.
@@ -127,9 +130,10 @@ Nine steps, each with a doc (the full explanation plus a "step by step, in pract
 
 ## See it in action
 
-Three real excerpts in [`examples/`](examples/), annotated - not invented for this repo, plus one that walks the whole pipeline on a single project rather than one step at a time:
+Three real excerpts in [`examples/`](examples/), annotated - not invented for this repo, plus two that each walk the whole pipeline on a single project rather than one step at a time:
 
-- **[One project, start to finish: idea through resume](examples/flashbuy_full_walkthrough.md)** - all nine steps applied to one real flash-sale checkout backend, so you can see how a named risk becomes an adversarial test, and a provisional decision gets revisited once that test actually runs.
+- **[One project, start to finish: idea through resume](examples/flashbuy_full_walkthrough.md)** - all seven steps applied to one real flash-sale checkout backend, so you can see how a named risk becomes an adversarial test, and a provisional decision gets revisited once that test actually runs.
+- **[A second full walkthrough, same steps, a different kind of project](examples/stack_overflow_pipeline_full_walkthrough.md)** - a data-correctness pipeline instead of a concurrency problem, so you can see what the same seven steps look like when the invariant is "a bad run can never become the published answer" rather than "never oversell under load."
 
 - **[Picking an idea, then naming risks before any code](examples/document_exchange_phase0.md)** - a real planning pass for a project that, in the end, wasn't built. An LLM-serving-gateway idea got rejected for a named reason (too common a 2026 portfolio shape to prove anything, regardless of polish), and the Phase 0 risk analysis for its replacement is shown in full.
 - **[Adversarial testing against real infrastructure](examples/flashbuy_chaos_testing.md)** - a flash-sale checkout backend needed to guarantee a duplicate message delivery never creates a duplicate downstream job. Five scenarios, run against real Docker containers, not simulated.
@@ -142,7 +146,7 @@ Three real excerpts in [`examples/`](examples/), annotated - not invented for th
 - `docs/` - the methodology itself, one numbered file per step, each ending in a concrete "step by step, in practice" checklist.
 - `templates/` - blank, fillable versions of the working documents each step produces (risks, design decisions, adversarial tests, case study).
 - `examples/` - real excerpts from two actual projects, annotated to show the methodology in practice.
-- `skill/` - twelve importable Claude skills: one umbrella skill covering the whole pipeline, eight focused skills for one step at a time, and three more for routing, self-audit, and keeping the repo's own methodology consistent.
+- `skill/` - thirteen importable Claude skills: one umbrella skill covering the whole pipeline, eight focused skills for one step at a time, one for rehearsing a project's live interview defense, and three more for routing, self-audit, and keeping the repo's own methodology consistent.
 
 ## How to use the skills
 

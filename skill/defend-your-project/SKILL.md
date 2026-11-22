@@ -1,0 +1,19 @@
+---
+name: defend-your-project
+description: Use when preparing to talk about a finished project live in an interview, not just write it up - anticipates the follow-up questions an interviewer actually asks and rehearses honest, specific answers instead of a rehearsed monologue.
+---
+
+# Defend your project
+
+Writing a case study (`case-study-and-resume`) and defending one out loud are different skills. A written case study is read once, at the reader's own pace, with no pushback. A live interview is the opposite: an interviewer picks one claim and pulls on it - "why not X instead," "what breaks at 10x," "what's the actual bug you'd rather not mention" - and a candidate who only has the written version memorized stalls the moment the question leaves the script. This is a real, named interview format, not a hypothetical: at least one real technical-screen prompt asks candidates directly to "demonstrate a project and defend its design," explicitly covering "contribution, implementation, impact, scale, design tradeoffs" live, not as a take-home writeup.
+
+**The raw material for this already exists if steps 02-07 were done honestly - this skill is rehearsal, not new content.** The rejected alternatives in `design_decisions` (step 03) are the direct answer to "why not X instead" - if a provisional decision's rejected option and its reason were written down, that's the whole answer, not something to improvise under pressure. The real bugs in `honest-documentation`'s writeup are the direct answer to "tell me about a bug you found" - naming the actual one, the root cause, and the fix beats inventing a safer-sounding fictional one on the spot. The adversarial-testing scenarios (step 05) are the direct answer to "what would break this" - a scenario that was actually run and actually broke something once is a far stronger answer than a guess about what theoretically could.
+
+**Rehearse three question types specifically, out loud, before the interview - not just by re-reading the case study:**
+1. **"Why not X instead?"** for every real design decision. If the honest answer is "I didn't consider X," say that - a defensible "I didn't consider it, and here's why X looks worse in hindsight" beats a fabricated justification that falls apart under a follow-up.
+2. **"What would break at 10x / under a failure you didn't test?"** Distinguish, out loud, between a failure mode that was actually tested (cite the real result) and one that's a reasoned guess (say explicitly that it's a guess, and what you'd test to confirm it).
+3. **"What's the weakest part of this project?"** Have one ready, specific answer - the known limitation already written down in the case study, not a deflection ("nothing comes to mind") or a humblebrag disguised as a weakness. A specific, owned weakness reads as more credible than a project presented as flawless.
+
+**Go deeper or shallower on signal, not a fixed script.** If the interviewer stays on one decision for several follow-ups, that's a cue to go deeper on the mechanism, not to pivot back to the prepared narrative. If they move on after one sentence, don't force the rest of the monologue - note what they followed up on afterward; it's a real signal about what that interviewer or role actually weights.
+
+**In practice:** before an interview where this project will come up, pull the actual `design_decisions.md` and `adversarial_tests.md` files (or their equivalents) for it and write one spoken-length answer (a few sentences, not a paragraph) for each "why not X" and each real bug - practice saying them out loud, not just reading them. If a decision or test file doesn't actually exist for this project, that's a sign steps 02-05 were skipped, not just a defense-prep gap - go back and do them first, because there's nothing honest to rehearse yet.

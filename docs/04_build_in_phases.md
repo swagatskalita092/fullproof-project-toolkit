@@ -16,6 +16,10 @@ A project built end to end before anything is tested tends to hide its real bugs
 
 This doesn't mean every project needs six named phases. A small, well-scoped project might have three real phases. What matters is that whatever phases exist are independently verifiable, not that there's a specific number of them.
 
+## A worked example
+
+[`examples/stack_overflow_pipeline_full_walkthrough.md`](../examples/stack_overflow_pipeline_full_walkthrough.md) shows seven real phases, each independently verified before the next started - and shows what it looks like when a phase genuinely does reveal an earlier design decision was wrong (a global monotonicity guard that needed to become per-dimension once a second data year was added), updated explicitly per step 4 below rather than patched around in code.
+
 Next: [05 - Adversarial testing](05_adversarial_testing.md).
 
 ## Step by step, in practice
