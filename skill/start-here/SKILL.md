@@ -1,6 +1,6 @@
 ---
 name: start-here
-description: Use when someone isn't sure which part of project-blueprint they need - a short router that asks where they're actually stuck and points at the exact doc/skill to use next, instead of making them read the whole repo first.
+description: Use when someone isn't sure which part of this repo (Fullproof Project Toolkit) they need - a short router that asks where they're actually stuck and points at the exact doc/skill to use next, instead of making them read the whole repo first.
 ---
 
 # Start here

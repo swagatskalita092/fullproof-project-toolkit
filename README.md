@@ -1,6 +1,6 @@
-# project-blueprint
+# Fullproof Project Toolkit
 
-![project-blueprint](docs/assets/hero.svg)
+![Fullproof Project Toolkit](docs/assets/hero.svg)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Claude Skills](https://img.shields.io/badge/claude%20skills-12-7c5cff)](skill/)

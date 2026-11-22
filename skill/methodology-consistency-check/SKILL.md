@@ -1,6 +1,6 @@
 ---
 name: methodology-consistency-check
-description: Use when adding, editing, or reviewing a skill or doc in project-blueprint itself - checks that the repo's own methodology doesn't contradict itself, and that cross-references actually resolve. For maintaining the repo, not for auditing someone's project (use project-self-audit for that).
+description: Use when adding, editing, or reviewing a skill or doc in this repo (Fullproof Project Toolkit) itself - checks that the repo's own methodology doesn't contradict itself, and that cross-references actually resolve. For maintaining the repo, not for auditing someone's project (use project-self-audit for that).
 ---
 
 # Methodology consistency check
