@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Repo consistency check for project-blueprint.
+Repo consistency check for this repo (Fullproof Project Toolkit).
 
 Companion script to skill/methodology-consistency-check/SKILL.md - makes that
 skill's "every link resolves" and "terminology drift" checks runnable, not just
