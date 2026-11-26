@@ -31,9 +31,9 @@ Not because the code is bad. Because the project was never actually attacked. Mo
 
 A skeptical interviewer only has to ask three questions to find the edge of that: **What happens when this fails? How do you know? Show me.** If the honest answer to any of those is "I assume it's fine," the project isn't interview-ready yet - no matter how polished the UI or how long the tech stack list is.
 
-This repo is built around closing exactly that gap, deliberately, before the interview happens instead of during it:
+This repo is built around closing exactly that gap, deliberately, before the interview happens instead of during it, through six concrete steps:
 
-![](docs/assets/flow.svg)
+![](docs/assets/pipeline.svg)
 
 ![](docs/assets/divider.svg)
 
