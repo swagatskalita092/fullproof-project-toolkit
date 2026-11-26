@@ -10,7 +10,7 @@
 
 **Build interview-ready projects.**
 
-Most "how to build a good portfolio project" advice is generic opinion. This repo isn't that. It's the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - written down so anyone can follow it, with real worked examples, fillable templates, and thirteen importable Claude skills - nine for the pipeline steps themselves, one for rehearsing the live interview version of the same material, plus one to route you to the right one and two more for auditing a project and keeping this repo's own methodology consistent.
+Most "how to build a good portfolio project" advice is generic opinion. This repo isn't that. It's the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - written down so anyone can follow it, with real worked examples, fillable templates, and thirteen importable Claude skills - eight for the pipeline steps themselves, one that runs the whole pipeline as a single import, one for rehearsing the live interview version of the same material, and three more for routing, auditing a project, and keeping this repo's own methodology consistent.
 
 The point of a portfolio project isn't that it works. It's that every claim about it is something that was actually proven, not asserted. That's the bar this repo is trying to get you to.
 
@@ -96,7 +96,7 @@ Nine steps, each with a doc (the full explanation plus a "step by step, in pract
 
 [`docs/07_case_study_and_resume.md`](docs/07_case_study_and_resume.md) · [`skill/case-study-and-resume`](skill/case-study-and-resume/SKILL.md)
 
-<br>**Also:** [`skill/defend-your-project`](skill/defend-your-project/SKILL.md) - the same material, rehearsed for the live interview version of this conversation, not just the written one.
+<br>**Also:** [`skill/honest-documentation`](skill/honest-documentation/SKILL.md) - the same honesty rules applied specifically to a README or engineering journal, not just the case study. [`skill/defend-your-project`](skill/defend-your-project/SKILL.md) - the same material, rehearsed for the live interview version of this conversation, not just the written one.
 </details>
 
 <details>
