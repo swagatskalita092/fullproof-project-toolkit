@@ -3,6 +3,7 @@
 ![Fullproof Project Toolkit](docs/assets/hero.svg)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Claude Agent](https://img.shields.io/badge/claude-agent-f3772f)](skill/portfolio-project-rigor/SKILL.md)
 [![Claude Skills](https://img.shields.io/badge/claude%20skills-13-7c5cff)](skill/)
 [![Docs](https://img.shields.io/badge/docs-9%20steps-informational)](docs/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -10,13 +11,17 @@
 
 **Build interview-ready projects.**
 
-Most "how to build a good portfolio project" advice is generic opinion. This repo isn't that. It's the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - written down so anyone can follow it, with real worked examples, fillable templates, and thirteen importable Claude skills - eight for the pipeline steps themselves, one that runs the whole pipeline as a single import, one for rehearsing the live interview version of the same material, and three more for routing, auditing a project, and keeping this repo's own methodology consistent.
+This is a Claude agent, not just a checklist you're supposed to follow on your own discipline. Point it at an idea or an existing project and it runs you through nine checkpoints - name the real risks, break what you built on purpose, verify it independently - before it will let you call anything "done." It's built from thirteen composable Claude skills: one umbrella skill that runs the whole agent as a single import, eight that cover one checkpoint at a time, and four more that route you to the right one, rehearse the live interview defense, audit a project you already have, and keep this repo's own methodology honest.
+
+It's also the actual, phase-by-phase pipeline used to build two real, independently verified engineering projects (a flash-sale checkout backend with chaos-tested concurrency, and a data pipeline with chaos-tested correctness) - not generic "how to build a good portfolio project" advice, the real thing, with real worked examples and fillable templates alongside it.
 
 The point of a portfolio project isn't that it works. It's that every claim about it is something that was actually proven, not asserted. That's the bar this repo is trying to get you to.
 
 ![](docs/assets/divider.svg)
 
 ## Quick start
+
+Import [`skill/portfolio-project-rigor`](skill/portfolio-project-rigor/SKILL.md) into Claude (or paste its `SKILL.md` straight into a conversation) and that's the agent, running the whole pipeline. Not sure where to start? [`skill/start-here`](skill/start-here/SKILL.md) is the agent's own router - tell it one sentence about where you're stuck and it points you at the right step.
 
 - **Have no idea yet?** Start at [`docs/08_idea_bank.md`](docs/08_idea_bank.md), then run whichever one you pick through [`docs/01_pick_your_idea.md`](docs/01_pick_your_idea.md).
 - **Have an idea already?** Start at [`docs/01_pick_your_idea.md`](docs/01_pick_your_idea.md) - check it's not a shallow version of something common before investing time in it.
@@ -39,7 +44,7 @@ This repo is built around closing exactly that gap, deliberately, before the int
 
 ## The pipeline
 
-Nine steps, each with a doc (the full explanation plus a "step by step, in practice" checklist) and a matching Claude skill (the same guidance, importable on its own). Expand a step below for what it actually asks you to do.
+Nine checkpoints the agent runs you through, each backed by a doc (the full explanation plus a "step by step, in practice" checklist) and a matching Claude skill (the same guidance, importable on its own if you only need that one piece). Expand a step below for what it actually asks you to do.
 
 <details>
 <summary><strong>01 · Pick your idea</strong> - name the differentiator before building, not after</summary>
@@ -146,11 +151,11 @@ Three real excerpts in [`examples/`](examples/), annotated - not invented for th
 - `docs/` - the methodology itself, one numbered file per step, each ending in a concrete "step by step, in practice" checklist.
 - `templates/` - blank, fillable versions of the working documents each step produces (risks, design decisions, adversarial tests, case study).
 - `examples/` - real excerpts from two actual projects, annotated to show the methodology in practice.
-- `skill/` - thirteen importable Claude skills: one umbrella skill covering the whole pipeline, eight focused skills for one step at a time, one for rehearsing a project's live interview defense, and three more for routing, self-audit, and keeping the repo's own methodology consistent.
+- `skill/` - the agent itself, as thirteen composable Claude skills: one umbrella skill (`portfolio-project-rigor`) that runs the whole thing, eight focused skills for one checkpoint at a time, one for rehearsing a project's live interview defense, and three more for routing, self-audit, and keeping the repo's own methodology consistent.
 
-## How to use the skills
+## How to use the agent
 
-Each `skill/<name>/SKILL.md` is self-contained - copy the folder into wherever your Claude setup reads skills from, or paste its content directly into a conversation. Use `skill/portfolio-project-rigor` if you want the whole pipeline at once; use one of the eight focused skills if you only need help with one step (e.g. just `adversarial-testing` if the project already exists and you want help designing its test suite).
+Each `skill/<name>/SKILL.md` is self-contained - copy the folder into wherever your Claude setup reads skills from, or paste its content directly into a conversation. Import `skill/portfolio-project-rigor` to run the agent end to end; import one of the eight focused skills instead if you only need help with a single checkpoint (e.g. just `adversarial-testing` if the project already exists and you want help designing its test suite).
 
 ## Why this exists
 
