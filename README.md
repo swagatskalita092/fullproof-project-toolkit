@@ -19,6 +19,17 @@ The point of a portfolio project isn't that it works. It's that every claim abou
 
 ![](docs/assets/divider.svg)
 
+## Try it in under a minute
+
+1. **Clone this repo** (or just download the [`skill/portfolio-project-rigor/`](skill/portfolio-project-rigor/) folder).
+2. **Open it in [Claude Code](https://claude.com/claude-code)** - give it real file/shell/git access, not just a chat window. (No Claude Code? Paste [`skill/portfolio-project-rigor/SKILL.md`](skill/portfolio-project-rigor/SKILL.md) straight into any Claude conversation instead - see the honest difference below.)
+3. **Tell it your idea.** One sentence is enough: "I want to build a [whatever]."
+4. **Watch it run.** With real tool access, it actually picks apart the idea, names the risks, builds it in phases, breaks it on purpose, verifies the result, and writes the case study - end to end in one sitting, only checking in with you at the handful of points that genuinely need your call (see the "Run this as one continuous session" section in [`skill/portfolio-project-rigor/SKILL.md`](skill/portfolio-project-rigor/SKILL.md) for the exact gates).
+
+**Being honest about what "the magic" actually is:** in Claude Code with tool access, this builds and tests the real thing. Pasted into a plain chat with no file/shell access, it can't run your code or execute an adversarial test itself - it walks you through the exact same checkpoints as rigorous guidance instead, with you driving the keyboard. Both are the real methodology; only one of them is hands-off.
+
+![](docs/assets/divider.svg)
+
 ## Quick start
 
 Import [`skill/portfolio-project-rigor`](skill/portfolio-project-rigor/SKILL.md) into Claude (or paste its `SKILL.md` straight into a conversation) and that's the agent, running the whole pipeline end to end in one sitting - it only stops to check with you at a few defined gates (the idea itself, a genuinely high-stakes design call, a final metric before it's claimed, anything with real external side effects), not after every step. Not sure where to start? [`skill/start-here`](skill/start-here/SKILL.md) is the agent's own router - tell it one sentence about where you're stuck and it points you at the right step.
