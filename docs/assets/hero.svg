@@ -34,6 +34,7 @@
     @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 
     .label { animation-delay: .5s; }
+    .agentline { animation-delay: .62s; }
     .title { animation-delay: .75s; }
     .tagline { animation-delay: 1.05s; }
 
@@ -78,18 +79,20 @@
   <path class="corner c3" d="M10,278 L10,290 L22,290"/>
   <path class="corner c4" d="M1190,278 L1190,290 L1178,290"/>
 
-  <text class="fadeUp label" x="70" y="100" fill="#7fb0ff" font-size="13" letter-spacing="6" font-weight="600">A METHODOLOGY, NOT A TEMPLATE</text>
+  <text class="fadeUp label" x="70" y="72" fill="#7fb0ff" font-size="13" letter-spacing="6" font-weight="600">A METHODOLOGY, NOT A TEMPLATE</text>
 
-  <text class="fadeUp title" x="70" y="160" font-size="56" font-weight="700" letter-spacing="1">
+  <text class="fadeUp agentline" x="70" y="94" fill="#f3772f" font-size="13" letter-spacing="4" font-weight="700">CLAUDE AGENT TO BUILD THE MOST INTERVIEW-READY PROJECTS</text>
+
+  <text class="fadeUp title" x="70" y="150" font-size="56" font-weight="700" letter-spacing="1">
     <tspan fill="#f3f8ff">fullproof-</tspan><tspan fill="#7fb0ff">toolkit</tspan>
   </text>
 
-  <text class="fadeUp tagline" x="70" y="195" font-size="19" fill="#c3d8ff">
+  <text class="fadeUp tagline" x="70" y="183" font-size="19" fill="#c3d8ff">
     <tspan x="70" dy="0">Build interview-ready projects, phase by phase and risk</tspan>
     <tspan x="70" dy="26">first. Nothing claimed that wasn't proven.</tspan>
   </text>
 
-  <g transform="translate(900,110)">
+  <g transform="translate(900,98)">
     <line class="flowline" x1="0" y1="0" x2="34" y2="0"/>
     <line class="flowline" x1="48" y1="0" x2="82" y2="0"/>
     <line class="flowline" x1="96" y1="0" x2="130" y2="0"/>
@@ -108,9 +111,9 @@
     <text class="nodelabel" x="192" y="22" text-anchor="middle">PROVE</text>
   </g>
 
-  <line class="statdiv" x1="70" y1="234" x2="1130" y2="234"/>
+  <line class="statdiv" x1="70" y1="218" x2="1130" y2="218"/>
 
-  <g transform="translate(70,244)">
+  <g transform="translate(70,228)">
     <g class="fadeUp st1">
       <rect class="tframe" width="250" height="38" rx="4"/>
       <path class="ttick" d="M0,8 L0,0 L8,0"/>
@@ -120,7 +123,7 @@
     </g>
   </g>
 
-  <g transform="translate(347,244)">
+  <g transform="translate(347,228)">
     <g class="fadeUp st2">
       <rect class="tframe" width="250" height="38" rx="4"/>
       <path class="ttick" d="M0,8 L0,0 L8,0"/>
@@ -130,7 +133,7 @@
     </g>
   </g>
 
-  <g transform="translate(624,244)">
+  <g transform="translate(624,228)">
     <g class="fadeUp st3">
       <rect class="tframe" width="250" height="38" rx="4"/>
       <path class="ttick" d="M0,8 L0,0 L8,0"/>
@@ -140,7 +143,7 @@
     </g>
   </g>
 
-  <g transform="translate(901,244)">
+  <g transform="translate(901,228)">
     <g class="fadeUp st4">
       <rect class="tframe" width="250" height="38" rx="4"/>
       <path class="ttick" d="M0,8 L0,0 L8,0"/>
