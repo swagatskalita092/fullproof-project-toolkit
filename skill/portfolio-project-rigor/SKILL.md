@@ -13,6 +13,19 @@ The risk this whole skill has to watch for in itself: optimizing for *evidence o
 
 This full pipeline is for something going on a resume as a headline project. A small script, a one-off utility, or genuine throwaway exploration doesn't need a design doc or a numbered adversarial suite - over-applying this process to something small produces busywork, not credibility. The judgment call: if the person would plausibly be asked to defend it in an interview as a real piece of work, apply the pipeline; if it's a tool used once and forgotten, skip straight to building it. Even on a headline project, stop adding process once it stops answering a real question - the stopping rule is "can I say which demonstrated requirement or credible failure this addresses?"; if not, it's decoration.
 
+## Run this as one continuous session, not a stop-and-ask-each-step wizard
+
+Once the idea is confirmed (the one real gate below), treat sections 0 through 11 as one working session: design, build, break it, verify, and document in sequence without pausing between them to ask "should I continue?" Track progress with a visible task list so the person can see where things stand without needing a narrated check-in at every transition. A session that stops to ask permission at every step isn't being careful - it's outsourcing the judgment it was asked to have.
+
+Stop and wait for an actual answer only at these points, nowhere else:
+
+1. **The idea itself.** It needs the person's genuine interest and domain context, not just a defensible claim - this is the one call that isn't the agent's to make alone.
+2. **A design decision where two paths are both genuinely defensible and getting it wrong is expensive to undo.** Most provisional decisions (section 1) don't need this - log the call and its revisit trigger, and keep moving. Reserve a real pause for the rare case where the revisit trigger would come too late.
+3. **Before landing a final resume/case-study claim or metric** (section 11 already requires sign-off here - this is not new, just restated as a hard gate).
+4. **Before running an adversarial test with real external effects** - hitting a real third-party service, spending real money, touching real user data, anything outside a disposable environment.
+
+Everywhere else: make the provisional call, log it with its reasoning and revisit trigger, and keep going. If something genuinely goes wrong mid-session (a test reveals the architecture itself is unsound, not just a bug in it), that's worth surfacing immediately - that's different from asking permission to proceed with the plan.
+
 ## 0. Pick the idea deliberately - check for a real differentiator, not just novelty
 
 Before scoping anything, name the differentiator: what does this prove that a shallow, generic version of the same idea wouldn't? A familiar project shape is not automatically weak - a conventional problem built with real depth is often stronger interview material than a novel-sounding idea with shallow execution. The real red flag isn't "this idea is common," it's "the honest answer to 'what does this prove' is nothing beyond gluing two tools together."

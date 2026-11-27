@@ -21,7 +21,7 @@ The point of a portfolio project isn't that it works. It's that every claim abou
 
 ## Quick start
 
-Import [`skill/portfolio-project-rigor`](skill/portfolio-project-rigor/SKILL.md) into Claude (or paste its `SKILL.md` straight into a conversation) and that's the agent, running the whole pipeline. Not sure where to start? [`skill/start-here`](skill/start-here/SKILL.md) is the agent's own router - tell it one sentence about where you're stuck and it points you at the right step.
+Import [`skill/portfolio-project-rigor`](skill/portfolio-project-rigor/SKILL.md) into Claude (or paste its `SKILL.md` straight into a conversation) and that's the agent, running the whole pipeline end to end in one sitting - it only stops to check with you at a few defined gates (the idea itself, a genuinely high-stakes design call, a final metric before it's claimed, anything with real external side effects), not after every step. Not sure where to start? [`skill/start-here`](skill/start-here/SKILL.md) is the agent's own router - tell it one sentence about where you're stuck and it points you at the right step.
 
 - **Have no idea yet?** Start at [`docs/08_idea_bank.md`](docs/08_idea_bank.md), then run whichever one you pick through [`docs/01_pick_your_idea.md`](docs/01_pick_your_idea.md).
 - **Have an idea already?** Start at [`docs/01_pick_your_idea.md`](docs/01_pick_your_idea.md) - check it's not a shallow version of something common before investing time in it.
